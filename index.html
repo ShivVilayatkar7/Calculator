@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main page -->
+     <div class="mainbox">
+        <div class="calculator">
+            <input type="text" id="display" class="calculator-screen">
+            <div class="calculator-keys">
+                <input type="button" value="AC" class="all-clear" onclick="clearDisplay()">
+                <input type="button" value="%" class="operator" onclick="addToDisplay('%')">
+                <input type="button" value="C" class="backspace" onclick="backspace()">
+                <input type="button" value="&divide;" class="operator" onclick="addToDisplay('/')">
+                <br>
+                <input type="button" id="nums" value="7" onclick="addToDisplay('7')">
+                <input type="button" id="nums" value="8" onclick="addToDisplay('8')">
+                <input type="button" id="nums" value="9" onclick="addToDisplay('9')">
+                <input type="button" value="&times;" class="operator" onclick="addToDisplay('*')">
+                <br>
+                <input type="button" id="nums" value="4" onclick="addToDisplay('4')">
+                <input type="button" id="nums" value="5" onclick="addToDisplay('5')">
+                <input type="button" id="nums" value="6" onclick="addToDisplay('6')">
+                <input type="button" value="&minus;" class="operator" onclick="addToDisplay('-')">
+                <br>
+                <input type="button" id="nums"value="1" onclick="addToDisplay('1')">
+                <input type="button" id="nums" value="2" onclick="addToDisplay('2')">
+                <input type="button" id="nums" value="3" onclick="addToDisplay('3')">
+                <input type="button" value="&plus;" class="operator" onclick="addToDisplay('+')">
+                <br>
+                <input type="button" id="nums" value="0" onclick="addToDisplay('0')">
+                <input type="button" id="nums" value="." onclick="addToDisplay('.')">
+                <input type="button" value="=" id="eval" onclick="calculateResult()">
+            </div>
+        </div>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>

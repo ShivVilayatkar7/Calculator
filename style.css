@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(white_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+/* mian box of the navbar */
+.mainbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* calculator box */
+.calculator{
+    width: 300px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px 0px #0000001a;
+    padding: 20px;
+    background-color: #333;
+    text-align: center;
+}
+/* screen of calculator */
+.calculator-screen {
+    background-color: #4d4d4d;
+    color: rgb(255, 255, 255);
+    width: 90%;
+    height: 80px;
+    text-align: right;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 2rem;
+    margin: 10px 0 15px 0;
+}
+/* calculator keys */
+.calculator-keys input{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    margin: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+.calculator-keys input:hover{
+    background-color: #1d1d1d;
+    color: white;
+}
+
+/* operators button */
+.operator{
+    background-color: #ff9500;
+    color: white;
+}
+.operator:hover{
+    background-color: #e68900;
+}
+.equal-sign {
+    background-color: #28a745;
+    color: white;
+    height: calc(60px * 2 + 10px);
+}
+.decimal {
+    width: 130px;
+}
+#eval{
+    background-color: #28a745;
+    width: 120px;
+}
+#eval:hover {
+    background-color: #1d1d1d;
+}
+.all-clear {
+    background-color: rgb(255, 66, 107);
+}
+.backspace{
+    background-color: aquamarine;
+}
+
+/* media to make respomsive website */
+@media (max-width: 380px) {
+    .calculator{
+        text-align: center;
+        border-radius: 0;
+        height: 100%;
+        width: 100%;
+        background-color: aliceblue;
+    }
+    .calculator-screen {
+        margin-top: 40%;
+        width: 90%;
+    }
+    .calculator-keys input{
+        height: 40px;
+        width: 40px;
+    }
+    #nums {
+        border: 1px solid #333;        
+    }
+    #eval{
+        width: 95px;
+    }
+}
