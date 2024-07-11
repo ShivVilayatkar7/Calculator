@@ -27,7 +27,7 @@ body{
 /* calculator box */
 .calculator{
     width: 300px;
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 0px 0px 20px 0px #0000001a;
     padding: 20px;
     background-color: #333;
@@ -96,23 +96,21 @@ body{
 @media (max-width: 380px) {
     .calculator{
         text-align: center;
-        border-radius: 0;
-        height: 100%;
-        width: 100%;
-        background-color: aliceblue;
+        height: fit-content;
+        border-radius: 10px;
+        background-color: #222;
     }
     .calculator-screen {
-        margin-top: 40%;
         width: 90%;
     }
     .calculator-keys input{
-        height: 40px;
-        width: 40px;
+        height: 45px;
+        width: 45px;
     }
     #nums {
         border: 1px solid #333;        
     }
     #eval{
-        width: 95px;
+        width: 100px;
     }
 }
